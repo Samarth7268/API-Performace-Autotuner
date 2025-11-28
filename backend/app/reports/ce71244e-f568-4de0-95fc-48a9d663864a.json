@@ -1,0 +1,29 @@
+{
+  "id": "ce71244e-f568-4de0-95fc-48a9d663864a",
+  "generated_at": "2025-11-27T17:18:45.873262",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 10.4 rps.",
+  "load_metrics": {
+    "median_latency": 230.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 10.4,
+    "error_rate": 0.0,
+    "throughput": 2.548
+  },
+  "profile_metrics": {
+    "error": "Profiler execution failed"
+  },
+  "ai_advice": [
+    "Here are my actionable optimization advice:",
+    "\u00e2\u20ac\u00a2 Investigate and optimize database queries to reduce median latency, aiming for <100ms.",
+    "\u00e2\u20ac\u00a2 Explore caching mechanisms (e.g., Redis, Memcached) to store frequently accessed data and improve response times.",
+    "\u00e2\u20ac\u00a2 Optimize code for the slowest 5% of requests (P95 Latency: 98.0 ms) to further reduce latency and increase overall throughput.",
+    "\u00e2\u20ac\u00a2 Consider load balancing to distribute traffic across multiple instances and improve overall throughput (Requests/sec: 10.4).",
+    "\u00e2\u20ac\u00a2 Review error rate (0.0%) and investigate any potential issues that may be causing errors, even if it's just a minor anomaly.",
+    "\u00e2\u20ac\u00a2 Analyze system resources usage (CPU, Memory, Disk) to identify bottlenecks and optimize accordingly.",
+    "\u00e2\u20ac\u00a2 Implement connection pooling to reduce overhead of establishing new connections and improve overall performance.",
+    "\u00e2\u20ac\u00a2 Optimize network settings for faster data transfer and better error handling.",
+    "\u00e2\u20ac\u00a2 Consider implementing a content delivery network (CDN) to reduce latency and improve response times for users in remote locations."
+  ]
+}

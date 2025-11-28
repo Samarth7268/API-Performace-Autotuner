@@ -1,0 +1,123 @@
+{
+  "id": "d18a1d35-1b4f-4b60-82ce-f171e3b83253",
+  "generated_at": "2025-11-28T05:24:22.525120",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 0.0 rps.",
+  "load_metrics": {
+    "median_latency": 0.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 0.0,
+    "error_rate": 0.0,
+    "throughput": 0.0
+  },
+  "profile_metrics": {
+    "flamegraph_path": "C:\\Users\\91636\\AppData\\Local\\Temp\\tmp7n7c5qfw.svg",
+    "hotspots": {}
+  },
+  "ai_advice": [
+    "Median latency is suspiciously low, indicating potential bottlenecks or inaccuracies in measurement.",
+    "P95 and P99 latencies are high, indicating a need to improve overall system responsiveness.",
+    "RPS, error rate, and throughput metrics are zero, suggesting no meaningful traffic is being measured; likely due to testing or lack of production data.",
+    "Focus on investigating the source of latency issues and implementing optimizations to reduce P95/P99 values."
+  ],
+  "auto_tuning": {
+    "baseline": {
+      "config": {
+        "users": 5,
+        "spawn_rate": 2
+      },
+      "metrics": {
+        "median_latency": 210.0,
+        "p95_latency": 98.0,
+        "p99_latency": 99.0,
+        "rps": 2.81,
+        "error_rate": 0.0,
+        "throughput": 0.81209
+      },
+      "score": 473.47
+    },
+    "best_config": {
+      "config": {
+        "users": 5,
+        "spawn_rate": 2
+      },
+      "metrics": {
+        "median_latency": 210.0,
+        "p95_latency": 98.0,
+        "p99_latency": 99.0,
+        "rps": 2.81,
+        "error_rate": 0.0,
+        "throughput": 0.81209
+      },
+      "score": 473.47
+    },
+    "improvement": {
+      "rps_gain": 0.0,
+      "p95_drop": 0.0,
+      "score_gain": 0.0
+    },
+    "trials": [
+      {
+        "config": {
+          "users": 5,
+          "spawn_rate": 2
+        },
+        "metrics": {
+          "median_latency": 210.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 2.81,
+          "error_rate": 0.0,
+          "throughput": 0.81209
+        },
+        "score": 473.47
+      },
+      {
+        "config": {
+          "users": 10,
+          "spawn_rate": 5
+        },
+        "metrics": {
+          "median_latency": 330.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 5.49,
+          "error_rate": 0.0,
+          "throughput": 2.13012
+        },
+        "score": 299.75
+      },
+      {
+        "config": {
+          "users": 20,
+          "spawn_rate": 5
+        },
+        "metrics": {
+          "median_latency": 250.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 9.58,
+          "error_rate": 0.0,
+          "throughput": 2.9123200000000002
+        },
+        "score": 221.98
+      },
+      {
+        "config": {
+          "users": 30,
+          "spawn_rate": 10
+        },
+        "metrics": {
+          "median_latency": 310.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 15.68,
+          "error_rate": 0.0,
+          "throughput": 5.723199999999999
+        },
+        "score": 181.38
+      }
+    ]
+  }
+}

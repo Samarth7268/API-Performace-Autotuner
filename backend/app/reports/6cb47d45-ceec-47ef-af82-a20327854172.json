@@ -1,0 +1,21 @@
+{
+  "id": "6cb47d45-ceec-47ef-af82-a20327854172",
+  "generated_at": "2025-11-27T17:45:51.989903",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 9.51 rps.",
+  "load_metrics": {
+    "median_latency": 250.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 9.51,
+    "error_rate": 0.0,
+    "throughput": 2.644
+  },
+  "profile_metrics": {
+    "flamegraph_path": "C:\\Users\\91636\\AppData\\Local\\Temp\\tmpyy1bt_m6.svg",
+    "hotspots": {}
+  },
+  "ai_advice": [
+    "AI Agent failure: Command '['ollama', 'run', 'llama3']' timed out after 60 seconds"
+  ]
+}

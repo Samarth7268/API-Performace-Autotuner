@@ -1,0 +1,27 @@
+{
+  "id": "c3d93ecf-e2d4-4dc8-9da8-764758023d5c",
+  "generated_at": "2025-11-28T04:58:50.224688",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 9.55 rps.",
+  "load_metrics": {
+    "median_latency": 210.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 9.55,
+    "error_rate": 0.0,
+    "throughput": 3.39
+  },
+  "profile_metrics": {
+    "flamegraph_path": "C:\\Users\\91636\\AppData\\Local\\Temp\\tmp3vwmeidw.svg",
+    "hotspots": {}
+  },
+  "ai_advice": [
+    "Here are some short optimization advice based on the API performance report:",
+    "Median latency is relatively high (210ms). Consider optimizing database queries or reducing compute-intensive operations to improve responsiveness.",
+    "P95 and P99 latencies are close, indicating a significant portion of requests may be waiting for resources. Investigate potential bottlenecks in your application's workflow.",
+    "RPS is low (9.55), which might indicate underutilization of resources. Review load testing results or capacity planning to ensure optimal resource allocation.",
+    "Error rate is 0%, so focus on performance optimization rather than debugging errors.",
+    "Throughput is moderate (3.39). Aim to increase it while maintaining acceptable latency and error rates.",
+    "Note: These are general suggestions based on the provided metrics, and a more in-depth analysis would be necessary for a specific production environment."
+  ]
+}

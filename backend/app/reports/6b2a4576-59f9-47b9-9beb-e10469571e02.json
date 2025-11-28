@@ -1,0 +1,20 @@
+{
+  "id": "6b2a4576-59f9-47b9-9beb-e10469571e02",
+  "generated_at": "2025-11-27T16:52:07.390193",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 11.92 rps.",
+  "load_metrics": {
+    "median_latency": 17.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 11.92,
+    "error_rate": 0.0,
+    "throughput": 0.31
+  },
+  "profile_metrics": {
+    "error": "Profiler execution failed"
+  },
+  "ai_advice": [
+    "AI Agent failure: [WinError 2] The system cannot find the file specified"
+  ]
+}

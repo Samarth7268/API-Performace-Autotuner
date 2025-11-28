@@ -1,0 +1,128 @@
+{
+  "id": "c9ea9d11-f100-44e4-86a4-0f2718dcd0e2",
+  "generated_at": "2025-11-28T05:54:00.712561",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 9.99 rps.",
+  "load_metrics": {
+    "median_latency": 230.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 9.99,
+    "error_rate": 0.0,
+    "throughput": 3.077
+  },
+  "profile_metrics": {
+    "flamegraph_path": "C:\\Users\\91636\\AppData\\Local\\Temp\\tmpij3sj0zp.svg",
+    "hotspots": {}
+  },
+  "ai_advice": [
+    "Here are some optimization advice in bullet points:",
+    "Investigate the median latency of 230ms, as it's higher than expected. Consider optimizing database queries or improving server-side caching to reduce this number.",
+    "P95 and P99 latencies are relatively low, indicating that most requests are served quickly. However, there might be a small percentage of slow requests causing high median latency. Analyze the slowest requests to identify potential bottlenecks.",
+    "The RPS (requests per second) is moderate at 9.99, which might indicate some room for improvement in terms of server utilization and scaling. Monitor this metric closely to ensure it doesn't become a bottleneck.",
+    "With an error rate of 0%, the API appears to be functioning correctly. However, consider implementing more robust error handling mechanisms to handle unexpected errors or edge cases.",
+    "The throughput is relatively low at 3.077, which might indicate underutilization of resources. Consider scaling up the server or optimizing code to increase throughput and better utilize available resources."
+  ],
+  "auto_tuning": {
+    "baseline": {
+      "config": {
+        "users": 5,
+        "spawn_rate": 2
+      },
+      "metrics": {
+        "median_latency": 510.0,
+        "p95_latency": 98.0,
+        "p99_latency": 99.0,
+        "rps": 2.39,
+        "error_rate": 0.0,
+        "throughput": 1.38142
+      },
+      "score": -7.41
+    },
+    "best_config": {
+      "config": {
+        "users": 30,
+        "spawn_rate": 10
+      },
+      "metrics": {
+        "median_latency": 630.0,
+        "p95_latency": 98.0,
+        "p99_latency": 99.0,
+        "rps": 11.56,
+        "error_rate": 0.0,
+        "throughput": 10.508040000000001
+      },
+      "score": 1.76
+    },
+    "improvement": {
+      "rps_gain": 9.17,
+      "p95_drop": 0.0,
+      "score_gain": 9.17
+    },
+    "trials": [
+      {
+        "config": {
+          "users": 5,
+          "spawn_rate": 2
+        },
+        "metrics": {
+          "median_latency": 510.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 2.39,
+          "error_rate": 0.0,
+          "throughput": 1.38142
+        },
+        "score": -7.41
+      },
+      {
+        "config": {
+          "users": 10,
+          "spawn_rate": 5
+        },
+        "metrics": {
+          "median_latency": 700.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 4.48,
+          "error_rate": 0.0,
+          "throughput": 3.1987200000000002
+        },
+        "score": -5.32
+      },
+      {
+        "config": {
+          "users": 20,
+          "spawn_rate": 5
+        },
+        "metrics": {
+          "median_latency": 570.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 7.42,
+          "error_rate": 0.0,
+          "throughput": 5.90632
+        },
+        "score": -2.38
+      },
+      {
+        "config": {
+          "users": 30,
+          "spawn_rate": 10
+        },
+        "metrics": {
+          "median_latency": 630.0,
+          "p95_latency": 98.0,
+          "p99_latency": 99.0,
+          "rps": 11.56,
+          "error_rate": 0.0,
+          "throughput": 10.508040000000001
+        },
+        "score": 1.76
+      }
+    ]
+  },
+  "score": 0,
+  "tuner_config": {},
+  "tuner_report": {}
+}

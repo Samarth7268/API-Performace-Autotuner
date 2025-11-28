@@ -1,0 +1,25 @@
+{
+  "id": "7a01eda2-dd7f-4564-a901-082c6f4c0fd1",
+  "generated_at": "2025-11-27T19:53:16.650847",
+  "health_status": "HEALTHY",
+  "summary": "System status: HEALTHY. P95 latency = 98.0 ms. Error rate = 0.0%. Throughput = 10.21 rps.",
+  "load_metrics": {
+    "median_latency": 240.0,
+    "p95_latency": 98.0,
+    "p99_latency": 99.0,
+    "rps": 10.21,
+    "error_rate": 0.0,
+    "throughput": 2.655
+  },
+  "profile_metrics": {
+    "flamegraph_path": "C:\\Users\\91636\\AppData\\Local\\Temp\\tmpvhck7soe.svg",
+    "hotspots": {}
+  },
+  "ai_advice": [
+    "Here are some optimization suggestions:",
+    "Investigate the high median latency (240ms) and consider optimizing database queries, reducing network latency, or improving server-side processing.",
+    "Focus on reducing P95 and P99 latencies to improve overall API responsiveness.",
+    "With a relatively low RPS of 10.21, consider increasing instance count or scaling out horizontally to handle increased traffic.",
+    "Review error rate and throughput metrics to ensure they align with business requirements; if necessary, optimize code for better resource utilization."
+  ]
+}
